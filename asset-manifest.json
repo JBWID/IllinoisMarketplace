@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/IllinoisMarketplace/static/css/main.3e84f655.css",
-    "main.js": "/IllinoisMarketplace/static/js/main.84348845.js",
+    "main.css": "/IllinoisMarketplace/static/css/main.39ce7e52.css",
+    "main.js": "/IllinoisMarketplace/static/js/main.aceaf00f.js",
     "index.html": "/IllinoisMarketplace/index.html",
-    "main.3e84f655.css.map": "/IllinoisMarketplace/static/css/main.3e84f655.css.map",
-    "main.84348845.js.map": "/IllinoisMarketplace/static/js/main.84348845.js.map"
+    "main.39ce7e52.css.map": "/IllinoisMarketplace/static/css/main.39ce7e52.css.map",
+    "main.aceaf00f.js.map": "/IllinoisMarketplace/static/js/main.aceaf00f.js.map"
   },
   "entrypoints": [
-    "static/css/main.3e84f655.css",
-    "static/js/main.84348845.js"
+    "static/css/main.39ce7e52.css",
+    "static/js/main.aceaf00f.js"
   ]
 }
