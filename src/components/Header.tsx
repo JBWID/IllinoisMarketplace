@@ -2,14 +2,13 @@ import React from "react";
 
 const Header: React.FC = () => {
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-3 py-2 bg-white drop-shadow-md">
+    <header className="top-0 left-0 right-0 z-50 flex items-center justify-between px-3 py-2 bg-white drop-shadow-md">
       <div className="flex items-center">
         <a href="/">
           <img
-            src="/mainLogo.png"
+            src={process.env.PUBLIC_URL + "/mainLogo.png"}
             alt="Illinois Logo"
-            width={300}
-            height={400}
+            width={150}
           />
         </a>
       </div>
@@ -18,10 +17,8 @@ const Header: React.FC = () => {
         <div className="absolute inset-y-0 right-0 flex items-center pr-2 pointer-events-none">
           <div className="flex items-center justify-center w-10 h-10 rounded-full bg-lightBlue">
             <img
-              src="/header/searchIcon.png"
+              src={process.env.PUBLIC_URL + "/header/searchIcon.png"}
               alt="Search Icon"
-              width={23}
-              height={23}
             />
           </div>
         </div>
@@ -36,10 +33,9 @@ const Header: React.FC = () => {
         <div className="flex px-2 py-1 bg-white border border-gray-300 items-cente rounded-xl focus:outline-none">
           <div className="w-auto mr-1">
             <img
-              src="/header/accountLogo.png"
+              src={process.env.PUBLIC_URL + "/header/accountLogo.png"}
               alt="Account Icon"
-              width={23}
-              height={23}
+              width={45}
             />
           </div>
           <div className="ml-2">
