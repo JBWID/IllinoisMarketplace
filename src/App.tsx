@@ -10,7 +10,7 @@ import NotFound from "./pages/NotFound";
 
 export default function App() {
   return (
-    <main className="">
+    <main className="bg-groundBase">
       <div className="">
         <Header />
       </div>

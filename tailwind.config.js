@@ -10,6 +10,9 @@ module.exports = {
         veryDarkBlue: "#1E3D7D",
         headerBase: "#fefefe",
         groundBase: "#fafafa", // edit in global.css
+        headingBlack: "#3f3f3f",
+        subheadingBlack: "#6d6d6d",
+        captionBlack: "#909090",
       },
     },
   },
