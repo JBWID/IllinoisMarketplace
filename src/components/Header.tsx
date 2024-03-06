@@ -8,7 +8,7 @@ const Header: React.FC = () => {
           <img
             src={process.env.PUBLIC_URL + "/mainLogo.png"}
             alt="Illinois Logo"
-            width={150}
+            width={300}
           />
         </a>
       </div>
@@ -19,6 +19,7 @@ const Header: React.FC = () => {
             <img
               src={process.env.PUBLIC_URL + "/header/searchIcon.png"}
               alt="Search Icon"
+              width={22}
             />
           </div>
         </div>

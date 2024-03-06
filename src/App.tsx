@@ -1,19 +1,12 @@
 import React from "react";
-import { 
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  Link
-} from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
 // Components Import
 import Header from "./components/Header";
 
 // Pages
-import MainPage from "./pages/MainPage";
 import HomePage from "./pages/HomePage";
 import NotFound from "./pages/NotFound";
-
 
 export default function App() {
   return (
@@ -25,16 +18,20 @@ export default function App() {
       <div className="">
         <Router>
           <nav>
-            <ul>
-              <li><Link to="/">Home</Link></li>
-              <li><Link to="/mainpage">MainPage</Link></li>
-              <li><Link to="/nonexistentroute">404test</Link></li>
-            </ul>
+            {/* <ul>
+              <li>
+                <Link to="/">Home</Link>
+              </li>
+              <li>
+                <Link to="/mainpage">MainPage</Link>
+              </li>
+              <li>
+                <Link to="/nonexistentroute">404test</Link>
+              </li>
+            </ul> */}
           </nav>
-
           <Routes>
             <Route path="/" element={<HomePage />} />
-            <Route path="/mainpage" element={<MainPage />} />
             <Route path="/*" element={<NotFound />} />
           </Routes>
         </Router>
