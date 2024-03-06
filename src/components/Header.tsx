@@ -2,7 +2,7 @@ import React from "react";
 
 const Header: React.FC = () => {
   return (
-    <header className="top-0 left-0 right-0 z-50 flex items-center justify-between px-3 py-2 bg-white drop-shadow-md">
+    <header className="top-0 left-0 right-0 z-50 flex items-center justify-between px-3 py-2 bg-headerBase drop-shadow-md">
       <div className="flex items-center">
         <a href="/">
           <img
@@ -12,7 +12,6 @@ const Header: React.FC = () => {
           />
         </a>
       </div>
-
       <div className="relative flex items-center flex-grow mx-4">
         <div className="absolute inset-y-0 right-0 flex items-center pr-2 pointer-events-none">
           <div className="flex items-center justify-center w-10 h-10 rounded-full bg-lightBlue">
