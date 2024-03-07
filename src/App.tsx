@@ -1,5 +1,4 @@
-import React from "react";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 // Components Import
 import Header from "./components/Header";
@@ -8,34 +7,21 @@ import Header from "./components/Header";
 import HomePage from "./pages/HomePage";
 import NotFound from "./pages/NotFound";
 
-export default function App() {
+function App() {
   return (
-    <main className="bg-groundBase">
-      <div className="">
+    <Router>
+      <div className="flex flex-col min-h-screen">
         <Header />
-      </div>
-
-      <div className="">
-        <Router>
-          <nav>
-            {/* <ul>
-              <li>
-                <Link to="/">Home</Link>
-              </li>
-              <li>
-                <Link to="/mainpage">MainPage</Link>
-              </li>
-              <li>
-                <Link to="/nonexistentroute">404test</Link>
-              </li>
-            </ul> */}
-          </nav>
+        <main className="flex-grow bg-groundBase">
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/*" element={<NotFound />} />
           </Routes>
-        </Router>
+          ;
+        </main>
       </div>
-    </main>
+    </Router>
   );
 }
+
+export default App;
